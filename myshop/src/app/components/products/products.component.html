@@ -2,7 +2,7 @@
 
 
 <div class="products">
-    <table style="margin:0 auto;">
+    <table style="margin:0 auto;" id="productsTable">
         <thead *ngIf="this.mainService.products">
             <tr>
                 <th>obrazek</th>
@@ -22,7 +22,7 @@
                         </ul>
                     </td>
                     <td>
-                        <button>Do koszyka</button>
+                        <button (click)="addToCart(product)">Do koszyka</button>
                     </td>
                 </tr>
             </ng-container>
